@@ -216,6 +216,22 @@ $('.slider').slick({
   ]
 });
 
+$('.slider_01').slick({
+  slidesToShow: 1,
+  dots: false,
+  arrows: true,
+  infinite: true,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
+
 // Perfect Pxel
 
 $('body').each(function() {

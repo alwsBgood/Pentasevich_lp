@@ -1,5 +1,262 @@
+@charset "UTF-8";
 @import url(../libs/niftymodal/component.css);
 @import url(../libs/slick/slick.min.css);
+.arrow_list li {
+  position: relative; }
+  .arrow_list li:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 14px;
+    left: -95px;
+    top: 5px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/arrow.png); }
+
+.arrow_list li + li {
+  margin-top: 40px; }
+
+.arrow_list .title {
+  margin-bottom: 17px; }
+
+.section_01 {
+  padding: 195px 0 150px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/sec_01-bg.jpg); }
+  .section_01 .header {
+    margin-bottom: 40px; }
+
+.section_02 {
+  padding: 185px 0 100px;
+  position: relative; }
+  .section_02:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 222px;
+    background-color: #ffe400;
+    left: 50%;
+    bottom: 75px;
+    z-index: -1; }
+  .section_02 .header {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 68px; }
+  .section_02 .sec_02-item-1 {
+    margin: 100px 0 0; }
+    .section_02 .sec_02-item-1 .title {
+      margin-bottom: 25px; }
+  .section_02 .sec_02-item-2 {
+    margin-top: 325px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    position: relative; }
+    .section_02 .sec_02-item-2:before {
+      content: '';
+      position: absolute;
+      width: 328px;
+      height: 260px;
+      left: 10px;
+      bottom: 100px;
+      z-index: -2;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-image: url(../img/sec_02-img-2.png); }
+
+.section_03 .col-6 {
+  padding-top: 115px;
+  padding-bottom: 95px; }
+
+.section_03 .with_bg {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url(../img/sec_03-bg.png); }
+
+.section_03 .header {
+  margin-bottom: 30px;
+  line-height: 63px; }
+
+.section_03 .sec_03-item-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -20px 0 82px;
+  position: relative; }
+  .section_03 .sec_03-item-1:before {
+    content: '';
+    position: absolute;
+    width: 99999px;
+    height: 5px;
+    left: 0;
+    bottom: -33px;
+    background-color: #000; }
+  .section_03 .sec_03-item-1 .title {
+    max-width: 170px;
+    margin-right: 55px; }
+  .section_03 .sec_03-item-1 .price {
+    font-size: 48px;
+    line-height: 50px;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../img/sec_03-img.png); }
+
+.section_03 .btn {
+  margin-top: 40px; }
+
+.section_04 {
+  padding: 150px 0 160px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/sec_04-bg.png);
+  overflow: hidden; }
+  .section_04:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 379px;
+    background-color: #ffe400;
+    right: 58%;
+    top: 100px; }
+  .section_04 .item-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .section_04 .item-1 .wrapper {
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-image: url(../img/sec_04-img-1.png);
+      padding-right: 45px; }
+    .section_04 .item-1 .wrapper + .wrapper {
+      margin-left: 15px;
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-image: url(../img/sec_04-img-2.png);
+      padding-right: 20px; }
+    .section_04 .item-1 .number {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 20px; }
+    .section_04 .item-1 .title {
+      font-size: 20px;
+      margin-bottom: 20px; }
+  .section_04 .plus {
+    font-size: 150px;
+    margin: 110px 0 0px;
+    line-height: 150px; }
+  .section_04 .header {
+    margin: 205px 10px 63px;
+    line-height: 60px; }
+  .section_04 .count_number {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .section_04 .row-2 .title {
+    margin-bottom: 20px; }
+  .section_04 .shifted_margin .text {
+    margin-right: -10px; }
+
+.section_05 {
+  padding: 195px 0 100px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/sec_05-bg.jpg); }
+  .section_05 .header {
+    line-height: 60px; }
+
+.section_06 {
+  padding: 90px 0 0px; }
+  .section_06 .header {
+    margin: 30px 0; }
+  .section_06 .sec_06-item-1 {
+    margin: 100px 0 0; }
+    .section_06 .sec_06-item-1 .title {
+      margin-bottom: 10px; }
+    .section_06 .sec_06-item-1 .img-2 {
+      margin-top: 20px; }
+
+.section_07 {
+  padding: 240px 0 100px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/sec_07-bg.jpg);
+  margin-top: -35px; }
+  .section_07 .item-1 {
+    margin: 0 10px; }
+    .section_07 .item-1 .title {
+      margin-bottom: 10px; }
+    .section_07 .item-1 .photo_block {
+      display: inline-block;
+      max-width: 80px;
+      vertical-align: top; }
+    .section_07 .item-1 .photo_block + .photo_block {
+      margin-left: 10px; }
+    .section_07 .item-1 .title_sm {
+      font-size: 14px;
+      line-height: 1;
+      margin: 20px 0 10px; }
+    .section_07 .item-1 .text_sm {
+      font-size: 13px;
+      line-height: 1; }
+  .section_07 .item-2 {
+    margin: 45px 10px 0; }
+    .section_07 .item-2 .title {
+      margin-bottom: 20px; }
+  .section_07 .item-3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 35px; }
+    .section_07 .item-3 .title {
+      min-width: 150px;
+      height: 100%; }
+      .section_07 .item-3 .title:before {
+        bottom: -20px; }
+  .section_07 .list {
+    margin: 10px 0 0 10px; }
+    .section_07 .list li + li {
+      margin-top: 53px; }
+    .section_07 .list .number {
+      font-size: 36px;
+      margin-bottom: 14px; }
+      .section_07 .list .number span.plus {
+        font-size: 20px;
+        display: inline-block;
+        margin-top: -5px;
+        vertical-align: top; }
+    .section_07 .list .number-descr {
+      font-size: 20px;
+      margin-left: 20px; }
+    .section_07 .list .number--withtext {
+      position: relative; }
+      .section_07 .list .number--withtext:before {
+        content: 'книг';
+        position: absolute;
+        width: 100px;
+        right: -110px;
+        top: 0;
+        -webkit-transform-origin: left center;
+        -ms-transform-origin: left center;
+        transform-origin: left center;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        font-family: "Gilroy-ExtraBold", sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000; }
+
 form {
   width: 400px;
   margin: 40px auto; }

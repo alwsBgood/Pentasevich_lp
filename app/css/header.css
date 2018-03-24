@@ -22,7 +22,7 @@ body.unscroll {
   font-family: "Gilroy-ExtraBold", sans-serif;
   color: #000;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 65px;
   font-weight: 400; }
 
 .text--title {
@@ -34,6 +34,7 @@ body.unscroll {
 .text--undertitle {
   font-family: "FuturaMediumC", sans-serif;
   font-size: 20px;
+  line-height: 23px;
   font-weight: 400; }
 
 .text--bold {
@@ -113,6 +114,7 @@ body.unscroll {
 
 /* Track */
 ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); }
 
 /* Handle */
@@ -120,7 +122,8 @@ body.unscroll {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: #ffe400;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
   background: #ffe400; }
@@ -213,33 +216,33 @@ body.unscroll {
     background-color: #a19000;
     color: #000; }
 
-#sec_00 {
+.section_00 {
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../img/sec_00-bg.jpg);
   position: relative;
   padding: 35px 0 55px;
   min-height: 100vh; }
-  #sec_00 .logo_text {
+  .section_00 .logo_text {
     float: left;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 1.4px; }
-    #sec_00 .logo_text:before {
+    .section_00 .logo_text:before {
       bottom: -20px; }
-  #sec_00 .call_back {
+  .section_00 .call_back {
     float: right;
     margin-top: 15px; }
-  #sec_00 .main_content {
+  .section_00 .main_content {
     margin-top: 110px;
     margin-bottom: 85px; }
-  #sec_00 .header_main {
+  .section_00 .header_main {
     font-size: 128px;
     line-height: 1;
     margin-bottom: 25px;
     position: relative; }
-    #sec_00 .header_main:before {
+    .section_00 .header_main:before {
       content: 'Революция сознания';
       position: absolute;
       width: 100px;
@@ -257,14 +260,14 @@ body.unscroll {
       line-height: 18px;
       color: #fff;
       letter-spacing: 0.9px; }
-  #sec_00 .header_main-desc {
+  .section_00 .header_main-desc {
     font-size: 30px;
     line-height: 1; }
-  #sec_00 .item {
+  .section_00 .item {
     margin: 145px 0 40px; }
-  #sec_00 .btn {
+  .section_00 .btn {
     margin: 45px 0 70px; }
-  #sec_00 .btn_dwn {
+  .section_00 .btn_dwn {
     will-change: transform;
     -webkit-transform-origin: left 51%;
     -ms-transform-origin: left 51%;
@@ -274,13 +277,13 @@ body.unscroll {
     font-size: 12px;
     float: left;
     letter-spacing: 1.2px; }
-  #sec_00 .phone {
+  .section_00 .phone {
     float: right; }
-    #sec_00 .phone path {
+    .section_00 .phone path {
       fill: #fff; }
-  #sec_00 .play_wrapper {
+  .section_00 .play_wrapper {
     margin-top: 225px; }
-    #sec_00 .play_wrapper .play_btn:hover #wcteb {
+    .section_00 .play_wrapper .play_btn:hover #wcteb {
       -webkit-transition: all .3s;
       transition: all .3s;
       fill: #fff; }
