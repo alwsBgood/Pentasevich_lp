@@ -38,11 +38,11 @@ body.unscroll {
   font-weight: 400;
 }
 
-.text--header {
+.text--bold {
   font-family: $bold_font;
 }
 
-.text--title {
+.text--medium {
   font-family: $medium_font;
 }
 
@@ -54,13 +54,43 @@ body.unscroll {
   color: $main_text_color;
 }
 
-.white {
-  .header,
-  .title {
-    color: $_white;
-  }
-  ;
+.text--white {
+  color: $_white
 }
+
+.text--black {
+  color: $_black
+}
+
+.text--borderb {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  &:before {
+    content: '';
+    width: 102%;
+    left: -1%;
+    bottom: -5px;
+    background-color: #b9a500;
+    height: 4px;
+    z-index: -1;
+  }
+  &_big{
+    height: 10px;
+  }
+  &_medium{
+    height: 6px;
+  }
+  &_white{
+    background-color: $_white;
+  }
+}
+
+.text--borderb_big {
+  border: 10px solid #b9a500;
+}
+
+
 
 .underline {
   position: relative;

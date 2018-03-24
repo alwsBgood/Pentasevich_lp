@@ -1,11 +1,101 @@
+@charset "UTF-8";
 body {
   position: relative;
-  font: 18px/24px "", sans-serif;
-  color: #000;
-  background-color: #fff; }
+  font: 18px/21px "FuturaFuturisLightC", sans-serif;
+  color: #767676;
+  font-weight: 400;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased; }
 
 body.unscroll {
   overflow: hidden; }
+
+.main_wrap {
+  overflow: hidden; }
+
+.container_big {
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%; }
+
+.header {
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  color: #000;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400; }
+
+.title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000; }
+
+.text--undertitle {
+  font-family: "FuturaMediumC", sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+.text--bold {
+  font-family: "Gilroy-ExtraBold", sans-serif; }
+
+.text--medium {
+  font-family: "FuturaMediumC", sans-serif; }
+
+.text--yellow {
+  color: #ffe400; }
+
+.text--grey {
+  color: #767676; }
+
+.text--white {
+  color: #fff; }
+
+.text--black {
+  color: #000; }
+
+.text--borderb {
+  position: relative;
+  display: inline-block;
+  z-index: 2; }
+  .text--borderb:before {
+    content: '';
+    position: absolute;
+    width: 102%;
+    left: -1%;
+    bottom: -5px;
+    background-color: #b9a500;
+    height: 4px;
+    z-index: -1; }
+  .text--borderb_big:before {
+    height: 10px; }
+  .text--borderb_medium:before {
+    height: 6px; }
+  .text--borderb_white:before {
+    background-color: #fff; }
+
+.text--borderb_big {
+  border: 10px solid #b9a500; }
+
+.underline {
+  position: relative; }
+  .underline:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    width: 40px;
+    height: 4px; }
+  .underline--white:before {
+    background-color: #fff; }
+  .underline--black:before {
+    background-color: #000; }
+  .underline--sm:before {
+    width: 20px;
+    bottom: -40px; }
+  .underline--top:before {
+    top: -20px;
+    bottom: initial; }
 
 .md-modal.md-show {
   opacity: 1; }
@@ -25,11 +115,28 @@ body.unscroll {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #1988cc;
+  background: #ffe400;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #1988cc; }
+  background: #ffe400; }
+
+.btn {
+  width: 250px;
+  height: 50px;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-color: #fded35;
+  color: #352b33;
+  font-size: 16px;
+  font-weight: 700; }
+
+.btn:hover {
+  background-color: #f5c0d0;
+  color: #fff; }
+
+.btn:active {
+  background-color: #dfafbd; }
 
 /* BUTTON scrollUP SYLES*/
 #scrollup {
@@ -54,31 +161,109 @@ body.unscroll {
     transition: all 0.5s; }
 
 #scrollup:hover svg {
-  fill: #1988cc; }
+  fill: #ffe400; }
 
-.hidden {
-  height: 0;
-  width: 0; }
+/* BUTTON scrollUP END*/
+#sec_01 {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url(../img/sec_00-bg.jpg);
+  position: relative;
+  padding: 20px 0;
+  min-height: 100vh; }
+  #sec_01 .logo {
+    margin-bottom: 90px; }
+  #sec_01 .header_main {
+    font-size: 128px;
+    margin-bottom: 40px;
+    position: relative; }
+    #sec_01 .header_main:before {
+      content: 'Революция сознания';
+      position: absolute;
+      width: 100px;
+      right: -40px;
+      bottom: 0;
+      -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+      transform-origin: left center;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      font-family: "Gilroy-ExtraBold", sans-serif;
+      letter-spacing: 0.9px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #fff; }
+  #sec_01 .btn {
+    margin: 40px auto 70px; }
 
-.bar-long {
-  height: 5px;
-  width: 0;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   left: 0;
-  background: #1988cc; }
+  padding: 15px 0 15px;
+  background-color: #202020; }
+  footer .politics {
+    margin-top: 13px; }
+    footer .politics a {
+      color: #65666a;
+      font-size: 15px; }
+    footer .politics a:hover {
+      color: #ffe400; }
+    footer .politics a + a {
+      margin-left: 10px; }
+  footer .logo_rezart {
+    margin-top: 3px;
+    margin-left: 0px;
+    width: 48px;
+    float: right; }
+    footer .logo_rezart svg {
+      fill: #fff;
+      -webkit-transition: fill .3s;
+      transition: fill .3s; }
+    footer .logo_rezart:hover svg {
+      fill: #ffe400; }
 
-.btn {
-  width: 300px;
-  height: 60px;
-  background-color: #1988cc;
-  color: #000;
-  font: 20px "", sans-serif;
-  text-transform: uppercase; }
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .politics a {
+    font-size: 13px; } }
 
-.btn:hover {
-  background-color: #ffec3d; }
+@media screen and (max-height: 760px) {
+  .md_large .md_content {
+    max-height: 320px; } }
 
-.btn:active {
-  background-color: #edcc00; }
+@media (max-width: 767px) {
+  #sec_01 {
+    padding-top: 100px;
+    background-position: top -150px center; }
+  footer {
+    text-align: center; }
+    footer [class*='col-'] {
+      width: 100%; }
+    footer .politics a {
+      font-size: 14px;
+      display: block;
+      text-align: center; }
+    footer .politics a + a {
+      margin-left: 0; }
+    footer .logo_rezart {
+      display: inline-block;
+      float: none;
+      margin-top: 10px;
+      margin-left: 0; }
+  div[id*='modal_politics'] h2 {
+    padding-top: 70px; }
+  div[id*='modal_politics'] .btn_close_modal {
+    top: 20px; } }
+
+@media (max-width: 600px) {
+  [class*='col-'] {
+    width: 100%; }
+  #sec_01 {
+    padding-top: 20px;
+    background-position: top -150px center; }
+    #sec_01 .logo {
+      margin-bottom: 70px; }
+    #sec_01 .header_main {
+      font-size: 46px; } }
