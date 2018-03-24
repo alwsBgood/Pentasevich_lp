@@ -121,6 +121,10 @@ body.unscroll {
   }
 }
 
+.tablet_view{
+  display: none;
+}
+
 .md-modal.md-show {
   opacity: 1;
 }
@@ -237,6 +241,9 @@ body.unscroll {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .tablet_view{
+    display: block;
+  }
   footer {
     .politics a {
       font-size: 13px;
