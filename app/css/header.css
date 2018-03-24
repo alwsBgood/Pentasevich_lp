@@ -25,7 +25,7 @@ body.unscroll {
   line-height: 60px;
   font-weight: 400; }
 
-.title {
+.text--title {
   font-size: 20px;
   line-height: 22px;
   font-weight: 400;
@@ -54,6 +54,9 @@ body.unscroll {
 .text--black {
   color: #000; }
 
+.shifted_left {
+  padding-left: 100px; }
+
 .text--borderb {
   position: relative;
   display: inline-block;
@@ -74,9 +77,6 @@ body.unscroll {
   .text--borderb_white:before {
     background-color: #fff; }
 
-.text--borderb_big {
-  border: 10px solid #b9a500; }
-
 .underline {
   position: relative; }
   .underline:before {
@@ -85,11 +85,10 @@ body.unscroll {
     left: 0;
     bottom: -40px;
     width: 40px;
-    height: 4px; }
+    height: 4px;
+    background-color: #000; }
   .underline--white:before {
     background-color: #fff; }
-  .underline--black:before {
-    background-color: #000; }
   .underline--sm:before {
     width: 20px;
     bottom: -40px; }
@@ -164,20 +163,20 @@ body.unscroll {
   fill: #ffe400; }
 
 /* BUTTON scrollUP END*/
-#sec_01 {
+#sec_00 {
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../img/sec_00-bg.jpg);
   position: relative;
   padding: 20px 0;
   min-height: 100vh; }
-  #sec_01 .logo {
+  #sec_00 .logo {
     margin-bottom: 90px; }
-  #sec_01 .header_main {
+  #sec_00 .header_main {
     font-size: 128px;
     margin-bottom: 40px;
     position: relative; }
-    #sec_01 .header_main:before {
+    #sec_00 .header_main:before {
       content: 'Революция сознания';
       position: absolute;
       width: 100px;
@@ -194,36 +193,8 @@ body.unscroll {
       font-size: 18px;
       line-height: 18px;
       color: #fff; }
-  #sec_01 .btn {
+  #sec_00 .btn {
     margin: 40px auto 70px; }
-
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 15px 0 15px;
-  background-color: #202020; }
-  footer .politics {
-    margin-top: 13px; }
-    footer .politics a {
-      color: #65666a;
-      font-size: 15px; }
-    footer .politics a:hover {
-      color: #ffe400; }
-    footer .politics a + a {
-      margin-left: 10px; }
-  footer .logo_rezart {
-    margin-top: 3px;
-    margin-left: 0px;
-    width: 48px;
-    float: right; }
-    footer .logo_rezart svg {
-      fill: #fff;
-      -webkit-transition: fill .3s;
-      transition: fill .3s; }
-    footer .logo_rezart:hover svg {
-      fill: #ffe400; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   footer .politics a {
@@ -234,7 +205,7 @@ footer {
     max-height: 320px; } }
 
 @media (max-width: 767px) {
-  #sec_01 {
+  #sec_00 {
     padding-top: 100px;
     background-position: top -150px center; }
   footer {
@@ -260,10 +231,10 @@ footer {
 @media (max-width: 600px) {
   [class*='col-'] {
     width: 100%; }
-  #sec_01 {
+  #sec_00 {
     padding-top: 20px;
     background-position: top -150px center; }
-    #sec_01 .logo {
+    #sec_00 .logo {
       margin-bottom: 70px; }
-    #sec_01 .header_main {
+    #sec_00 .header_main {
       font-size: 46px; } }

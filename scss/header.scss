@@ -31,7 +31,7 @@ body.unscroll {
   font-weight: 400;
 }
 
-.title {
+.text--title {
   font-size: 20px;
   line-height: 22px;
   font-weight: 400;
@@ -68,6 +68,10 @@ body.unscroll {
   color: $_black
 }
 
+.shifted_left{
+  padding-left: 100px;
+}
+
 .text--borderb {
   position: relative;
   display: inline-block;
@@ -93,12 +97,6 @@ body.unscroll {
   }
 }
 
-.text--borderb_big {
-  border: 10px solid #b9a500;
-}
-
-
-
 .underline {
   position: relative;
   &:before {
@@ -108,12 +106,10 @@ body.unscroll {
     bottom: -40px;
     width: 40px;
     height: 4px;
+    background-color: $_black;
   }
   &--white:before {
     background-color: $_white;
-  }
-  &--black:before {
-    background-color: $_black;
   }
   &--sm:before {
     width: 20px;
@@ -205,7 +201,7 @@ body.unscroll {
 /* BUTTON scrollUP END*/
 
 
-#sec_01 {
+#sec_00 {
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../img/sec_00-bg.jpg);
@@ -239,42 +235,6 @@ body.unscroll {
   }
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 15px 0 15px;
-  background-color: #202020;
-  .politics {
-    margin-top: 13px;
-    a {
-      color: #65666a;
-      font-size: 15px;
-    }
-    a:hover {
-      color: $main_color;
-    }
-    a+a {
-      margin-left: 10px;
-    }
-  }
-  .logo_rezart {
-    margin-top: 3px;
-    margin-left: 0px;
-    width: 48px; // margin-right: 20px;
-    float: right;
-    svg {
-      fill: #fff;
-      transition: fill .3s;
-    }
-    &:hover {
-      svg {
-        fill: $main_color;
-      }
-    }
-  }
-}
 
 @media (min-width: 768px) and (max-width: 991px) {
   footer {
@@ -291,7 +251,7 @@ footer {
 }
 
 @media (max-width: 767px) {
-  #sec_01 {
+  #sec_00 {
     padding-top: 100px;
     background-position: top -150px center;
   }
@@ -331,7 +291,7 @@ footer {
   [class*='col-'] {
     width: 100%;
   }
-  #sec_01 {
+  #sec_00 {
     padding-top: 20px;
     background-position: top -150px center;
     .logo {
