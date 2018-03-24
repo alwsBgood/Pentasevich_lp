@@ -66,14 +66,16 @@ body.unscroll {
     position: absolute;
     width: 102%;
     left: -1%;
-    bottom: -5px;
-    background-color: #b9a500;
+    bottom: 0px;
+    background-color: #ffe400;
     height: 4px;
     z-index: -1; }
   .text--borderb_big:before {
-    height: 10px; }
+    height: 10px;
+    background-color: #b9a500; }
   .text--borderb_medium:before {
-    height: 6px; }
+    height: 6px;
+    background-color: #b9a500; }
   .text--borderb_white:before {
     background-color: #fff; }
 
@@ -93,7 +95,7 @@ body.unscroll {
     width: 20px;
     bottom: -40px; }
   .underline--top:before {
-    top: -20px;
+    top: -30px;
     bottom: initial; }
 
 .tablet_view {
@@ -124,18 +126,29 @@ body.unscroll {
   background: #ffe400; }
 
 .btn {
-  width: 250px;
   height: 50px;
-  -webkit-border-radius: 24px;
-  border-radius: 24px;
-  background-color: #fded35;
-  color: #352b33;
-  font-size: 16px;
-  font-weight: 700; }
-
-.btn:hover {
-  background-color: #f5c0d0;
-  color: #fff; }
+  width: 310px;
+  -webkit-box-shadow: 0 15px 21px rgba(255, 228, 0, 0.28);
+  box-shadow: 0 15px 21px rgba(255, 228, 0, 0.28);
+  background-color: #ffe400;
+  font-family: "Gilroy-ExtraBold", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  color: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .btn--small {
+    width: 200px; }
+  .btn:hover {
+    -webkit-box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
+    box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
+    background-color: #ff1c1c;
+    color: #fff; }
+  .btn:active {
+    -webkit-box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
+    box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
+    background-color: #cc0f0f;
+    color: #fff; }
 
 .btn:active {
   background-color: #dfafbd; }
@@ -166,24 +179,71 @@ body.unscroll {
   fill: #ffe400; }
 
 /* BUTTON scrollUP END*/
+.phone {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  font-size: 14px; }
+  .phone:hover {
+    color: #ffe400; }
+    .phone:hover path {
+      fill: #ffe400 !important; }
+  .phone svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .phone svg path {
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+
+.call_back {
+  width: 181px;
+  height: 41px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1.4px; }
+  .call_back:hover {
+    background-color: #ffe400;
+    color: #000; }
+  .call_back:active {
+    background-color: #a19000;
+    color: #000; }
+
 #sec_00 {
   background-repeat: no-repeat;
   background-position: top center;
   background-image: url(../img/sec_00-bg.jpg);
   position: relative;
-  padding: 20px 0;
+  padding: 35px 0 55px;
   min-height: 100vh; }
-  #sec_00 .logo {
-    margin-bottom: 90px; }
+  #sec_00 .logo_text {
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1.4px; }
+    #sec_00 .logo_text:before {
+      bottom: -20px; }
+  #sec_00 .call_back {
+    float: right;
+    margin-top: 15px; }
+  #sec_00 .main_content {
+    margin-top: 110px;
+    margin-bottom: 85px; }
   #sec_00 .header_main {
     font-size: 128px;
-    margin-bottom: 40px;
+    line-height: 1;
+    margin-bottom: 25px;
     position: relative; }
     #sec_00 .header_main:before {
       content: 'Революция сознания';
       position: absolute;
       width: 100px;
-      right: -40px;
+      right: -90px;
       bottom: 0;
       -webkit-transform-origin: left center;
       -ms-transform-origin: left center;
@@ -195,9 +255,35 @@ body.unscroll {
       letter-spacing: 0.9px;
       font-size: 18px;
       line-height: 18px;
-      color: #fff; }
+      color: #fff;
+      letter-spacing: 0.9px; }
+  #sec_00 .header_main-desc {
+    font-size: 30px;
+    line-height: 1; }
+  #sec_00 .item {
+    margin: 145px 0 40px; }
   #sec_00 .btn {
-    margin: 40px auto 70px; }
+    margin: 45px 0 70px; }
+  #sec_00 .btn_dwn {
+    will-change: transform;
+    -webkit-transform-origin: left 51%;
+    -ms-transform-origin: left 51%;
+    transform-origin: left 51%;
+    -webkit-transform: rotate(-90deg) translateZ(0);
+    transform: rotate(-90deg) translateZ(0);
+    font-size: 12px;
+    float: left;
+    letter-spacing: 1.2px; }
+  #sec_00 .phone {
+    float: right; }
+    #sec_00 .phone path {
+      fill: #fff; }
+  #sec_00 .play_wrapper {
+    margin-top: 225px; }
+    #sec_00 .play_wrapper .play_btn:hover #wcteb {
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      fill: #fff; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .tablet_view {
