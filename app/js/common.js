@@ -65,48 +65,8 @@ $(function() {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
     });
-     // Отправка в Google sheets
-     $.ajax({
-      type: 'POST',
-      url: '',
-      dataType: 'json',
-      data: msg,
-    });
-    // Отправка на почту
-    $.ajax({
-      type: 'POST',
-      url: 'mail.php',
-      data: short_msg,
-      success: function() {
-        setTimeout(function() {
-          $("[name=send]").removeAttr("disabled");
-        }, 1000);
-        $('div.md-show').removeClass('md-show');
-        dataLayer.push({
-          'form_type': formType,
-          'event': "form_submit"
-        });
-          // Отправка в базу данных
-          $.ajax({
-           type: 'POST',
-           url: 'db/registration.php',
-           dataType: 'json',
-           data: form.serialize(),
-           success: function(response) {
-             console.info(response);
-             console.log(form.serialize());
-             if (response.status == 'success') {
-              $('form').trigger("reset");
-              window.location.href = '/success';
-            }
-          }
-        });
-      },
-      error: function(xhr, str) {
-        console.log("Erorr")
-      }
-    });
-
+    // ADD SEND SCRIPT HERE
+    alert('Отправленно!')
   }
   return false;
 })

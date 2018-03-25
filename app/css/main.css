@@ -1445,7 +1445,7 @@ input:-ms-input-placeholder {
   div[id*='modal_politics'] .btn_close_modal {
     top: 20px; } }
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
   div[id*="modal_callback"] {
     max-width: 500px;
     min-width: 100%; } }
