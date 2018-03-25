@@ -351,9 +351,11 @@ body.unscroll {
 
   .play_wrapper{
     margin-top: 225px;
-    .play_btn:hover #wcteb, #wcteb5{
-      transition: all .3s;
-      fill: $_white;
+    .play_btn:hover{
+      #wcteb, #wcteb5{
+        transition: all .3s;
+        fill: $_white;
+      }
     }
   }
 }
@@ -480,23 +482,22 @@ body.unscroll {
 }
 
 @media (max-width: 530px) {
-  .call_back{
-    border: none;
-    font-size: 0px;
-    color: transparent;
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-    background-image: url(../img/call-icon.svg);
-  }
-
   .section_00 {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-image: url(../img/sec_00-bg-mob_sm.jpg);
+    .call_back{
+      border: none;
+      font-size: 0px;
+      color: transparent;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: contain;
+      background-image: url(../img/call-icon.svg);
+    }
     .main_content{
       margin-top: 50px;
     }
@@ -531,6 +532,17 @@ body.unscroll {
     display: inline;
     &:before{
       display: none;
+    }
+  }
+}
+
+@media (max-height: 680px) {
+  .section_00{
+    .main_content{
+      margin-top: 50px;
+    }
+    .item{
+      margin-top: 90px;
     }
   }
 }

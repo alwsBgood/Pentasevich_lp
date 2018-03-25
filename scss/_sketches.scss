@@ -271,6 +271,7 @@ div[id*="modal_politics"]{
     height: 13px;
     border: none;
     outline: none;
+    transition: all .3s;
   }
 // .slick-next{
 //   border-top: 4px solid #000;
@@ -286,16 +287,14 @@ div[id*="modal_politics"]{
 //   left: 10px;
 //   margin: 0;
 // }
-// .slick-next:hover{
-//   border-top: 4px solid $main_color;
-//   border-right: 4px solid $main_color;
-//   // background: none !important;
-// }
-// .slick-prev:hover{
-//   border-top: 4px solid $main_color;
-//   border-left: 4px solid $main_color;
-//   // background: none !important;
-// }
+.slick-next:hover{
+  transform: translateX(5px)
+  // background: none !important;
+}
+.slick-prev:hover{
+  transform: translateX(-5px)
+  // background: none !important;
+}
 .slick-next:before, .slick-prev:before{
   display: none;
 }

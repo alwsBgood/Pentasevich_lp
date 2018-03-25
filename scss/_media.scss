@@ -595,6 +595,11 @@
     .img-1{
       display: none;
     }
+    .img-4{
+      width: 80%;
+      max-width: 458px;
+      margin-bottom: 30px;
+    }
   }
 
   .section_07{
@@ -699,7 +704,8 @@
 
   .section_11{
     overflow: hidden;
-    padding: 0;
+    padding: 200px 0 0;
+    margin-top: -50px;
     &:before{
       display: none;
     }
@@ -708,7 +714,11 @@
       padding: 40px 50px;
       background-color: $main_color;
       &:before{
-        display: none;
+        width: 240px;
+        background-size: contain;
+        z-index: 1;
+        left: 0px;
+        bottom: 255px;
       }
       .text{
         .desctop_view{
