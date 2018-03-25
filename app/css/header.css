@@ -110,7 +110,10 @@ body.unscroll {
 
 /* SCROLL BAR STYLES*/
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 4px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  max-height: 75px; }
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -121,12 +124,12 @@ body.unscroll {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #ffe400;
+  background: #000;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #ffe400; }
+  background: #000; }
 
 .btn {
   height: 50px;
@@ -142,6 +145,8 @@ body.unscroll {
   transition: all .3s; }
   .btn--small {
     width: 200px; }
+  .btn--big {
+    width: 340px; }
   .btn:hover {
     -webkit-box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
     box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);

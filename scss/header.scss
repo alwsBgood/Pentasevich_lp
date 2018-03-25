@@ -139,7 +139,9 @@ body.unscroll {
 /* SCROLL BAR STYLES*/
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
+  border-radius: 2px;
+  max-height: 75px;
 }
 
 /* Track */
@@ -153,13 +155,13 @@ body.unscroll {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0px;
-  background: $main_color;
+  background: $_black;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: $main_color;
+  background: $_black;
 }
 
 .btn {
@@ -174,6 +176,9 @@ body.unscroll {
   transition: all .3s;
   &--small{
     width: 200px;
+  }
+  &--big{
+    width: 340px;
   }
   &:hover{
     box-shadow: 0 15px 21px rgba(255, 28, 28, 0.28);
