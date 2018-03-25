@@ -42,10 +42,8 @@ gulp.task('scripts', function() {
 		'./app/libs/jquery/jquery-2.1.4.min.js',
 		'./app/libs/niftymodal/classie.js',
     './app/libs/niftymodal/modalEffects.js',
-    // './app/libs/masked/mask.js',
-		// './app/libs/plugins-scroll/plugins-scroll.js',
-    // './app/libs/slick/slick.min.js',
-    // './app/libs/tableset/jquery.tabslet.min.js'
+    './app/libs/masked/mask.js',
+		'./app/libs/plugins-scroll/plugins-scroll.js'
 		])
 		.pipe(concat('libs.js'))
 		.pipe(gulp.dest('./app/js/'));
