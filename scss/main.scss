@@ -673,7 +673,7 @@
     width: 17%;
   }
   .col_custom-5{
-    width: 8%;
+    width: 7%;
   }
   .col_custom-7{
     width: 12%;
@@ -681,6 +681,7 @@
 
   .phone{
     path{fill: $_white}
+    min-width: 160px;
   }
   .social{
     display: inline-block;
@@ -694,6 +695,16 @@
   }
   .social+.social{
     margin-left: 10px;
+  }
+
+  .contack_item{
+    .title{
+      margin-bottom: 10px;
+    }
+    .text{
+      font-size: 16px;
+      max-width: 230px;
+    }
   }
 }
 

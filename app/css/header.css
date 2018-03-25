@@ -172,9 +172,6 @@ body.unscroll {
     background-color: #cc0f0f;
     color: #fff; }
 
-.btn:active {
-  background-color: #dfafbd; }
-
 /* BUTTON scrollUP SYLES*/
 #scrollup {
   position: fixed;
