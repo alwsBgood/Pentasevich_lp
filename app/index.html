@@ -12,7 +12,7 @@
 
   <meta property="og:description" content="" />
 
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="./img/og.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="300" />
   <meta property="og:image:height" content="300" />
@@ -79,6 +79,26 @@
           <span class="text--borderb text--borderb_medium">Я помогу тебе достигнуть</span> <br/>
           <span class="text--borderb text--borderb_medium">своих целей!</span>
         </p>
+        <a class="flex md-trigger play_btn mobile_view" data-modal="video_modal">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="93" viewBox="0 0 93 93" class="play_btn_cvg" data-modal="modal_callback">
+              <defs>
+                <path id="wctea" d="M1299 429a45 45 0 1 1 0 90 45 45 0 0 1 0-90z" />
+                <path id="wcteb" d="M1299 444a30 30 0 1 1 0 60 30 30 0 0 1 0-60z" />
+                <path id="wctec" d="M1296 481v-14l8 7z" />
+              </defs>
+              <g transform="translate(-1252 -428)">
+                <g opacity=".7">
+                  <use fill="#ffe400" xlink:href="#wctea" />
+                </g>
+                <g>
+                  <use xlink:href="#wcteb" />
+                </g>
+                <g>
+                  <use fill="#ffe400" xlink:href="#wctec" />
+                </g>
+              </g>
+            </svg>
+          </a>
         <div class="item">
           <p class="text underline underline--top underline--white">Инвестируй $19 и получи наставника, <br  class="desctop_view"/> который работает с миллионерами <br/> и олимпийскими чемпионами</p>
 
@@ -87,7 +107,7 @@
       </div>
       <div class="col-5">
         <div class="play_wrapper flex">
-          <a class="flex md-trigger play_btn" data-modal="modal_callback">
+          <a class="flex md-trigger play_btn" data-modal="video_modal">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="93" viewBox="0 0 93 93" class="play_btn_cvg" data-modal="modal_callback">
               <defs>
                 <path id="wctea" d="M1299 429a45 45 0 1 1 0 90 45 45 0 0 1 0-90z" />
@@ -123,7 +143,7 @@
 <!-- ======= SECTION 00 END ======== -->
 
 <!-- ======= SECTION 01 START ======== -->
-<div id="sec_01" class="section_01">
+<div id="sec_01" class="section_01 desctop_tablet_view">
   <div class="container">
       <div class="row">
         <div class="col-7">
@@ -152,11 +172,11 @@
 <!-- ======= SECTION 01 END ======== -->
 
 <!-- ======= SECTION 02 START ======== -->
-<div id="sec_02" class="section_02">
+<div id="sec_02" class="section_02 desctop_tablet_view">
   <div class="container">
     <div class="row">
       <div class="col-5">
-        <img src="./img/sec_02-img.png" alt="Мотивация">
+        <img class="img-1" src="./img/sec_02-img.png" alt="Мотивация">
         <div class="shifted_left sec_02-item-1">
           <p class="title text--title text--bold">Участие в моей мастер-группе <br class="desctop_view"/> поможет тебе сложить паззл. </p>
           <p class="text">Даст то, чего тебе не хватает для большого  рывка, кардинальных изменений в жизни. <br class="desctop_view"/> Ты не будешь наблюдателем — ты станешь человеком, которому под силу изменить <br class="desctop_view"/> ход игры.</p>
@@ -209,8 +229,15 @@
   <div class="container">
     <div class="row">
       <div class="col-5">
+        <h2 class="header text--white text--bold mobile_view">
+            Каждый <br class="desctop_view"/>
+            месяц <br class="desctop_view"/>
+            <span class="text--borderb text--borderb_big">участники</span><br class="desctop_view"/>
+            <span class="text--borderb text--borderb_big">мастер-группы</span><br class="desctop_view"/>
+            <span class="text--borderb text--borderb_big">получают:</span>
+        </h2>
         <div class="item-1">
-          <div class="wrapper">
+          <div class="wrapper wrapper-30">
             <p class="number text--black text--bold">4</p>
             <p class="text--title text--medium title">Закрытых <br class="desctop_view"/> мастер-класса,  <br class="desctop_view"/> которые веду  <br class="desctop_view"/> лично я;</p>
           </div>
@@ -223,7 +250,7 @@
         <p class="plus text--white text--bold">+</p>
       </div>
       <div class="col-7 shifted_left">
-        <h2 class="header text--white text--bold">
+        <h2 class="header text--white text--bold desctop_tablet_view">
             Каждый <br class="desctop_view"/>
             месяц <br class="desctop_view"/>
             <span class="text--borderb text--borderb_big">участники</span><br class="desctop_view"/>
@@ -271,7 +298,7 @@
 <!-- ======= SECTION 04 END ======== -->
 
 <!-- ======= SECTION 05 START ======== -->
-<div id="sec_05" class="section_05">
+<div id="sec_05" class="section_05 desctop_tablet_view">
   <div class="container">
     <div class="row">
       <div class="col-7">
@@ -336,7 +363,6 @@
         <div class="item-1">
           <p class="text--title text--bold title">... А также людьми, которые <br class="desctop_view"/> меняют этот мир:</p>
           <div class="slider_01">
-            <div class="slide">
               <div class="photo_block">
                 <img src="./img/photo-1.png" alt="Photo">
                 <p class="text--black text--bold title_sm">Григорий Аветов</p>
@@ -357,9 +383,7 @@
                 <p class="text--black text--bold title_sm">Георгий Логвинский</p>
                 <p class="text_sm">Депутат Украины</p>
               </div>
-            </div>
 
-            <div class="slide">
               <div class="photo_block">
                 <img src="./img/photo-5.png" alt="Photo">
                 <p class="text--black text--bold title_sm">Мэрилин Аткинсон</p>
@@ -381,9 +405,7 @@
                 <p class="text--black text--bold title_sm">Виталий Кличко</p>
                 <p class="text_sm">Киевский гор. голова</p>
               </div>
-            </div>
 
-              <div class="slide">
                 <div class="photo_block">
                   <img src="./img/photo-9.png" alt="Photo">
                   <p class="text--black text--bold title_sm">Денис Гаглоев</p>
@@ -404,9 +426,7 @@
                   <p class="text--black text--bold title_sm">Евгений Комаровский</p>
                   <p class="text_sm">Педиатр</p>
                 </div>
-              </div>
 
-                <div class="slide">
                   <div class="photo_block">
                     <img src="./img/photo-13.png" alt="Photo">
                     <p class="text--black text--bold title_sm">Елена Луценко</p>
@@ -427,9 +447,7 @@
                     <p class="text--black text--bold title_sm">Александр Крамаренко</p>
                     <p class="text_sm">Украинский журналист</p>
                   </div>
-                </div>
 
-                <div class="slide">
                   <div class="photo_block">
                     <img src="./img/photo-17.png" alt="Photo">
                     <p class="text--black text--bold title_sm">Андре Тан</p>
@@ -450,13 +468,13 @@
                     <p class="text--black text--bold title_sm">Лидия Билас</p>
                     <p class="text_sm">Кто она?</p>
                   </div>
-                </div>
           </div>
         </div>
 
         <div class="item-2">
           <p class="text--bold text--title title">Я основал "Академию <br class="desctop_view"/> Экспертов Влияй!"</p>
-          <p class="text">Разработал систему гармоничного <br class="desctop_view"/> развития человека "5 сфер" и одноименный <br class="desctop_view"/> портал 5sfer.com, который за прошлый год <br class="desctop_view"/> посетили более 2 млн человек. <br/>
+          <p class="text">
+            <spna class="text_block">Разработал систему гармоничного <br class="desctop_view"/> развития человека "5 сфер" и одноименный <br class="desctop_view"/> портал 5sfer.com, который за прошлый год <br class="desctop_view"/> посетили более 2 млн человек.</spna> <br/>
             <span class="text--black text--medium text--borderb">Моя мастер-группа “Действуй!” —</span> <br class="desctop_view"/>
             <span class="text--black text--medium text--borderb">одно из самых крупных сообществ лидеров</span> <br class="desctop_view"/>
             <span class="text--black text--medium text--borderb">в странах СНГ.</span> <br class="desctop_view"/> </p>
@@ -497,18 +515,18 @@
 <!-- ======= SECTION 08 START ======== -->
 <div id="sec_08" class="section_08">
   <div class="container">
-    <div class="row row-1">
+    <div class="row row-1 desctop_tablet_view">
       <div class="col-9">
           <h2 class="header text--bold">Стоит <br class="desctop_view"/> попробовать</h2>
-          <p class="underheader text--undertitle underline">Согласись, люди часто загораются <br class="desctop_view"/> чем-то: мотивирующей книгой, <br class="desctop_view"/> тренингом или открытием. Но затемd<br class="desctop_view"/> теряют огонь, и возвращаются <br class="desctop_view"/> к обычной, обыденной жизни.d<br class="desctop_view"/> Все потому, что <span class="text--black text--medium text--borderb">мастерство</span> <br class="desctop_view"/> <span class="text--black text--medium text--borderb">требует постоянства.</span> </p>
+          <p class="underheader text--undertitle underline">Согласись, люди часто загораются <br class="desctop_view"/> чем-то: мотивирующей книгой, <br class="desctop_view"/> тренингом или открытием. Но затем <br class="desctop_view"/> теряют огонь, и возвращаются <br class="desctop_view"/> к обычной, обыденной жизни. <br class="desctop_view"/> Все потому, что <span class="text--black text--medium text--borderb">мастерство</span> <br class="desctop_view"/> <span class="text--black text--medium text--borderb">требует постоянства.</span> </p>
       </div>
       <div class="col-3">
-        <p class="text--medium text--black">Так же, как <br class="desctop_view"/> профессиональному <br class="desctop_view"/> спортсмену нужен тренер. <br class="desctop_view"/> Так и тебе необходим <br class="desctop_view"/> наставник, который будет <br class="desctop_view"/> поддерживать этот огонь. </p>
+        <p class="text--medium text--black text-1">Так же, как <br class="desctop_view"/> профессиональному <br class="desctop_view"/> спортсмену нужен тренер. <br class="desctop_view"/> Так и тебе необходим <br class="desctop_view"/> наставник, который будет <br class="desctop_view"/> поддерживать этот огонь. </p>
       </div>
     </div>
-    <div class="row row-2">
+    <div class="row row-2 desctop_tablet_view">
       <div class="col-7">
-        <img src="./img/sec_08-img-1.png" alt="Тренер">
+        <img class="img-1" src="./img/sec_08-img-1.png" alt="Тренер">
       </div>
       <div class="col-5">
         <div class="item-1">
@@ -526,7 +544,7 @@
       <div class="col-6 shifted_left">
         <div class="content_wrapper">
           <div class="item">
-            <p class="text--bold text--title title">Я уверен в своей программе.</p>
+            <p class="text--bold text--title title title_main">Я уверен в своей программе.</p>
             <p class="text">Поэтому, если ты, выполняя все задания, <br class="desctop_view"/> не получишь желаемого результата — я верну тебе все деньги. </p>
           </div>
           <div class="item">
@@ -576,7 +594,7 @@
 <div id="sec_10" class="section_10">
   <div class="container">
     <div class="row">
-      <div class="col-7">
+      <div class="col-7 desctop_tablet_view">
         <img src="./img/sec_10-img-1.png" alt="Дневник" class="img-1">
       </div>
       <div class="col-5">
@@ -592,7 +610,7 @@
 <div id="sec_11" class="section_11">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-6 desctop_tablet_view">
         <div class="item-1 shifted_left">
           <p class="text--title text--bold title">Такой подход <br class="desctop_view"/> успешно работает во многих <br class="desctop_view"/> из моих проектов.</p>
           <p class="text">Это одновременно соревнование <br class="desctop_view"/> и поддержка. Ты будешь получать очень <br class="desctop_view"/> важную обратную связь, это будет <br class="desctop_view"/> вдохновлять и подталкивать тебя <br class="desctop_view"/> к действию.</p>
@@ -648,7 +666,7 @@
 <!-- ======= SECTION 12 END ======== -->
 
 <!-- ======= SECTION 13 START ======== -->
-<div id="sec_13" class="section_13">
+<div id="sec_13" class="section_13 desctop_tablet_view">
   <div class="container">
     <div class="row">
       <div class="col-6">
@@ -687,12 +705,10 @@
 <div id="sec_14" class="section_14">
   <div class="container" id="packets">
     <div class="row">
-      <div class="col-4">
+      <div class="col-4 tablet-col-12">
           <h2 class="header text--bold underline">Выбирай <br class="desctop_view"/> удобный <br class="desctop_view"/> формат <br class="desctop_view"/> участия:</h2>
-
-          <img src="./img/sec_14-img.png" alt="Тренер" class="tablet_view img">
       </div>
-      <div class="col-4">
+      <div class="col-4 tablet-col-6">
         <div class="yellow_block"></div>
         <div class="packet packet_month">
           <p class="text--bold text--black number">1</p>
@@ -739,7 +755,7 @@
           <a href="#packets" class="btn flex btn--small">Принять участие</a>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-4 tablet-col-6">
         <div class="yellow_block"></div>
         <div class="packet packet_year">
           <p class="text--bold text--black number">1</p>
@@ -892,6 +908,36 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="md-modal md-effect-8 md_middle" id="video_modal">
+      <div class="md-content">
+        <span class="btn_close_modal">
+          <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
+        </span>
+        <div id="3AFnpFj81JM" class="youtube flex">
+            <div class="play_wrapper flex">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="93" viewBox="0 0 93 93" class="play_btn_cvg" data-modal="modal_callback">
+                <defs>
+                  <path id="wctea1" d="M1299 429a45 45 0 1 1 0 90 45 45 0 0 1 0-90z" />
+                  <path id="wcteb2" d="M1299 444a30 30 0 1 1 0 60 30 30 0 0 1 0-60z" />
+                  <path id="wctec3" d="M1296 481v-14l8 7z" />
+                </defs>
+                <g transform="translate(-1252 -428)">
+                  <g opacity=".7">
+                    <use fill="#ffe400" xlink:href="#wctea1" />
+                  </g>
+                  <g>
+                    <use xlink:href="#wcteb2" />
+                  </g>
+                  <g>
+                    <use fill="#ffe400" xlink:href="#wctec3" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+        </div>
+      </div>
   </div>
 
   <div class="md-modal md-effect-8 md_middle" id="testimonial_modal-1">
