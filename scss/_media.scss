@@ -1,16 +1,26 @@
 @import "bourbon";
 @import "vars.scss";
 
-@media (min-width: 768px) and (max-width: 991px){
-  footer{
-    .politics a{
-      font-size: 13px;
+
+@media (min-width: 992px) and (max-width: 1900px){
+  .section_15{
+    .container_big{
+      padding: 0 40px;
     }
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
 
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+  footer{
+    .politics a{
+      font-size: 13px;
+    }
+  }
 }
 
 @media screen and (max-height: 760px){

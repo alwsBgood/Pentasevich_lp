@@ -21,7 +21,25 @@ body.unscroll {
   padding-left: 100px;
   padding-right: 100px;
   width: 100%;
+  margin: 0 auto;
 }
+@media (min-width: 768px) and (max-width: 991px){
+  .container_big {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .container_big {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+  .container_big {
+    width: 1170px;
+    padding: 0 10px;
+  }
+}
+
 
 .header {
   font-family: $bold_font;
@@ -262,7 +280,16 @@ body.unscroll {
     color: $_black;
   }
 }
-
+.logo_text {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  &:before{
+    bottom: -20px;
+  }
+}
 .section_00 {
   background-repeat: no-repeat;
   background-position: top center;
@@ -270,16 +297,7 @@ body.unscroll {
   position: relative;
   padding: 35px 0 55px;
   min-height: 100vh;
-  .logo_text {
-    float: left;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 1.4px;
-    &:before{
-      bottom: -20px;
-    }
-  }
+
   .call_back{
     float: right;
     margin-top: 15px;

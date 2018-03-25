@@ -211,8 +211,8 @@ $('.slider').slick({
   }
 });
 
-$('.slider').on('afterChange', function(event, slick, currentSlide){
-  $('.current').html(currentSlide+1);
+$('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  $('.current').html(nextSlide+1);
 });
 
 

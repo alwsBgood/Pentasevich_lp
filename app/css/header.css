@@ -16,7 +16,21 @@ body.unscroll {
 .container_big {
   padding-left: 100px;
   padding-right: 100px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container_big {
+    padding: 0 40px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container_big {
+    padding: 0 40px; } }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container_big {
+    width: 1170px;
+    padding: 0 10px; } }
 
 .header {
   font-family: "Gilroy-ExtraBold", sans-serif;
@@ -221,6 +235,15 @@ body.unscroll {
     background-color: #a19000;
     color: #000; }
 
+.logo_text {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1.4px; }
+  .logo_text:before {
+    bottom: -20px; }
+
 .section_00 {
   background-repeat: no-repeat;
   background-position: top center;
@@ -228,14 +251,6 @@ body.unscroll {
   position: relative;
   padding: 35px 0 55px;
   min-height: 100vh; }
-  .section_00 .logo_text {
-    float: left;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 1.4px; }
-    .section_00 .logo_text:before {
-      bottom: -20px; }
   .section_00 .call_back {
     float: right;
     margin-top: 15px; }
