@@ -112,11 +112,15 @@ $(function() {
       var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1&rel=0&amp;showinfo=0";
       if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
 
-      var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+      var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'class':  'youtube-video', 'height': $(this).height() })
 
       $(this).replaceWith(iframe);
     });
   });
+});
+
+$('.stop-video').click(function(){
+	$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 });
 
 //  UP BUTTON

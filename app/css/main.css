@@ -1275,6 +1275,8 @@ input:-ms-input-placeholder {
     background-color: #343434;
     padding-top: 80px;
     padding-bottom: 80px; }
+    .section_04 .text {
+      color: #ececec; }
     .section_04:before {
       display: none; }
     .section_04 .header {
@@ -1429,6 +1431,8 @@ input:-ms-input-placeholder {
     .section_15 .col_custom {
       text-align: left;
       width: 32.33% !important; }
+    .section_15 .text {
+      color: #ececec; }
     .section_15 .col_custom-5,
     .section_15 .col_custom-6,
     .section_15 .col_custom-7 {

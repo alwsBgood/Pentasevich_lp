@@ -349,6 +349,8 @@ body.unscroll {
     position: relative;
     color: #fff;
     min-height: auto; }
+    .section_00 .text {
+      color: #ececec; }
     .section_00 .play_btn {
       position: absolute;
       right: 20%;
