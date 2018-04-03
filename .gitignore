@@ -21,3 +21,4 @@ src
 venv
 node_modules
 .sass-cache
+.idea
